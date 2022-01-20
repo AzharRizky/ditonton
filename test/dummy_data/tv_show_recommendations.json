@@ -1,0 +1,33 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/2RPbOcPXY4loKPhGazjY98gIbu3.jpg",
+      "genre_ids": [
+        16,
+        10751,
+        10759,
+        10765,
+        35
+      ],
+      "id": 3809,
+      "media_type": "tv",
+      "name": "Yin Yang Yo!",
+      "origin_country": [
+        "CA",
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Yin Yang Yo!",
+      "overview": "Two 11-year-old rabbit twins named Yin and Yang train under Master Yo, a grumpy old panda. They learn the sacred art of Woo Foo, a special type of martial arts that involves both might and magic. They must work together to save the world from evil villains and forces that want to destroy, corrupt or take it over. However, through all these adventures, Yin and Yang still portray stereotypical siblings; belligerently antagonistic but still ultimately caring about each other and working together if needed.",
+      "popularity": 9.612,
+      "poster_path": "/xqpMiqR4IitT8jexina7BELPBs4.jpg",
+      "first_air_date": "2006-10-02",
+      "vote_average": 7.859,
+      "vote_count": 64
+    }
+  ],
+  "total_pages": 2,
+  "total_results": 28
+}

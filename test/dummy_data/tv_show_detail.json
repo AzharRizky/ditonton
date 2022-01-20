@@ -1,0 +1,133 @@
+{
+  "backdrop_path": "/ycW8HBuDJdbgi8WUxKIP4ExDAPe.jpg",
+  "created_by": [
+    {
+      "id": 141043,
+      "credit_id": "5253497919c29579400e9927",
+      "name": "Sam Register",
+      "gender": 2,
+      "profile_path": "/9K1RTX51GDbegrAhMeLQLSGyF3B.jpg"
+    }
+  ],
+  "episode_run_time": [
+    22
+  ],
+  "first_air_date": "2004-11-19",
+  "genres": [
+    {
+      "id": 16,
+      "name": "Animation"
+    },
+    {
+      "id": 35,
+      "name": "Comedy"
+    }
+  ],
+  "homepage": "",
+  "id": 255,
+  "in_production": false,
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "last_air_date": "2006-06-27",
+  "last_episode_to_air": {
+    "air_date": "2006-06-27",
+    "episode_number": 8,
+    "id": 14073,
+    "name": "Jungle Prom / Truth or Dare / Sumo Kaz",
+    "overview": "Jungle Prom: The girls go to a prom in the jungle, but are in danger of missing it.\n\nTruth or Dare: The girls play a game of Truth or Dare.\n\nSumo Kaz: With the help of the girls, Kaz trains to become a sumo wrestler and has his first match.",
+    "production_code": "",
+    "season_number": 3,
+    "still_path": "/9ot8X6wH7pPxieT0S6k8ob4Nd0F.jpg",
+    "vote_average": 0.0,
+    "vote_count": 0
+  },
+  "name": "Hi Hi Puffy AmiYumi",
+  "next_episode_to_air": null,
+  "networks": [
+    {
+      "name": "Cartoon Network",
+      "id": 56,
+      "logo_path": "/c5OC6oVCg6QP4eqzW6XIq17CQjI.png",
+      "origin_country": "US"
+    }
+  ],
+  "number_of_episodes": 39,
+  "number_of_seasons": 3,
+  "origin_country": [
+    "JP",
+    "US"
+  ],
+  "original_language": "en",
+  "original_name": "Hi Hi Puffy AmiYumi",
+  "overview": "Hi Hi Puffy AmiYumi is an American-Japanese animated fantasy-comedy television series from Cartoon Network and TV Tokyo, produced by Renegade Animation and Cartoon Network Studios in Japan. The show was created by Sam Register, who also serves as the series' executive producer.\n\nAccording to Register, the target audience of the show is boys and girls from six to eleven years old. However, the show also has a following of fans of the real-life Ami Onuki and Yumi Yoshimura who make up the Japanese pop duo PUFFY, known as \"Puffy AmiYumi\" in North America. Register, a fan of the band, wished to spread its fame to other parts of the world and thus produced the cartoon.\n\nThe series features the adventures of animated versions of the duo, who have been immensely popular in Japan since making their debut in 1996. The group now has its own U.S. albums, including a 2004 companion album to this program, and was known to viewers of Cartoon Network in the USA for performing the theme to the Teen Titans animated series.",
+  "popularity": 11.773,
+  "poster_path": "/s8QFImdM6DzV9h2sOUt67NmxVzd.jpg",
+  "production_companies": [
+    {
+      "id": 7899,
+      "logo_path": "/qnhd98hnBxCMMMod58FJqbCZ5O7.png",
+      "name": "Cartoon Network Studios",
+      "origin_country": "US"
+    },
+    {
+      "id": 4422,
+      "logo_path": null,
+      "name": "Renegade Animation",
+      "origin_country": "US"
+    }
+  ],
+  "production_countries": [
+    {
+      "iso_3166_1": "US",
+      "name": "United States of America"
+    }
+  ],
+  "seasons": [
+    {
+      "air_date": "2004-11-19",
+      "episode_count": 13,
+      "id": 817,
+      "name": "Season 1",
+      "overview": "",
+      "poster_path": "/zhxIh1JbuVMgJfoB7fGzavciC3V.jpg",
+      "season_number": 1
+    },
+    {
+      "air_date": "2005-04-22",
+      "episode_count": 13,
+      "id": 818,
+      "name": "Season 2",
+      "overview": "",
+      "poster_path": "/en8uobY7NQ3V2MVcvP3TR7Pml62.jpg",
+      "season_number": 2
+    },
+    {
+      "air_date": "2006-02-17",
+      "episode_count": 13,
+      "id": 819,
+      "name": "Season 3",
+      "overview": "",
+      "poster_path": "/3qBuxd5BVGl5sVFbYWfEVOgjktI.jpg",
+      "season_number": 3
+    }
+  ],
+  "spoken_languages": [
+    {
+      "english_name": "English",
+      "iso_639_1": "en",
+      "name": "English"
+    },
+    {
+      "english_name": "Japanese",
+      "iso_639_1": "ja",
+      "name": "日本語"
+    }
+  ],
+  "status": "Ended",
+  "tagline": "",
+  "type": "Scripted",
+  "vote_average": 7.3,
+  "vote_count": 96
+}
