@@ -82,10 +82,10 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
 }
 
 class DetailContent extends StatefulWidget {
-  late bool isMovieAddedToWatchlist;
+  final bool isMovieAddedToWatchlist;
   final MovieDetail movie;
 
-  DetailContent(
+  const DetailContent(
       {Key? key, required this.movie, required this.isMovieAddedToWatchlist})
       : super(key: key);
 
@@ -94,6 +94,8 @@ class DetailContent extends StatefulWidget {
 }
 
 class _DetailContentState extends State<DetailContent> {
+  late bool isMovieAddedToWatchlist = widget.isMovieAddedToWatchlist;
+
   @override
   Widget build(BuildContext context) {
     return ScrollableSheetContainer(
@@ -105,7 +107,7 @@ class _DetailContentState extends State<DetailContent> {
         ),
         ElevatedButton(
           onPressed: () async {
-            if (!widget.isMovieAddedToWatchlist) {
+            if (!isMovieAddedToWatchlist) {
               context
                   .read<WatchlistMoviesBloc>()
                   .add(AddMovieToWatchlist(widget.movie));
@@ -124,7 +126,7 @@ class _DetailContentState extends State<DetailContent> {
                   ? watchlistAddSuccessMessage
                   : watchlistRemoveSuccessMessage;
             } else {
-              message = !widget.isMovieAddedToWatchlist
+              message = !isMovieAddedToWatchlist
                   ? watchlistAddSuccessMessage
                   : watchlistRemoveSuccessMessage;
             }
@@ -144,13 +146,13 @@ class _DetailContentState extends State<DetailContent> {
             }
 
             setState(() {
-              widget.isMovieAddedToWatchlist = !widget.isMovieAddedToWatchlist;
+              isMovieAddedToWatchlist = !isMovieAddedToWatchlist;
             });
           },
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              widget.isMovieAddedToWatchlist
+              isMovieAddedToWatchlist
                   ? const Icon(Icons.check)
                   : const Icon(Icons.add),
               const SizedBox(width: 6.0),

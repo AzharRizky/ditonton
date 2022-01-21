@@ -79,10 +79,10 @@ class _TVShowDetailPageState extends State<TVShowDetailPage> {
 }
 
 class DetailContent extends StatefulWidget {
-  late bool isTVShowAddedToWatchlist;
+  final bool isTVShowAddedToWatchlist;
   final TVShowDetail tvShow;
 
-  DetailContent({
+  const DetailContent({
     Key? key,
     required this.tvShow,
     required this.isTVShowAddedToWatchlist,
@@ -93,6 +93,8 @@ class DetailContent extends StatefulWidget {
 }
 
 class _DetailContentState extends State<DetailContent> {
+  late bool isTVShowAddedToWatchlist = widget.isTVShowAddedToWatchlist;
+
   @override
   Widget build(BuildContext context) {
     return ScrollableSheetContainer(
@@ -104,7 +106,7 @@ class _DetailContentState extends State<DetailContent> {
         ),
         ElevatedButton(
           onPressed: () async {
-            if (!widget.isTVShowAddedToWatchlist) {
+            if (!isTVShowAddedToWatchlist) {
               context
                   .read<WatchlistTVShowsBloc>()
                   .add(AddTVShowToWatchlist(widget.tvShow));
@@ -123,7 +125,7 @@ class _DetailContentState extends State<DetailContent> {
                   ? watchlistAddSuccessMessage
                   : watchlistRemoveSuccessMessage;
             } else {
-              message = !widget.isTVShowAddedToWatchlist
+              message = !isTVShowAddedToWatchlist
                   ? watchlistAddSuccessMessage
                   : watchlistRemoveSuccessMessage;
             }
@@ -143,14 +145,13 @@ class _DetailContentState extends State<DetailContent> {
             }
 
             setState(() {
-              widget.isTVShowAddedToWatchlist =
-                  !widget.isTVShowAddedToWatchlist;
+              isTVShowAddedToWatchlist = !isTVShowAddedToWatchlist;
             });
           },
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              widget.isTVShowAddedToWatchlist
+              isTVShowAddedToWatchlist
                   ? const Icon(Icons.check)
                   : const Icon(Icons.add),
               const SizedBox(width: 6.0),
