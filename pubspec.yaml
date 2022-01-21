@@ -21,26 +21,33 @@ environment:
   sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
-  cached_network_image: ^3.0.0
-  cupertino_icons: ^1.0.2
-  dartz: ^0.10.0-nullsafety.2
-  equatable: ^2.0.2
   flutter:
     sdk: flutter
-  flutter_rating_bar: ^4.0.0
+  cupertino_icons: ^1.0.2
+  firebase_core: ^1.8.0
+  firebase_crashlytics: ^2.2.4
+  dartz: ^0.10.0
   get_it: ^7.1.3
-  google_fonts: ^2.1.0
-  http: ^0.13.3
+  mocktail: ^0.2.0
+  flutter_bloc: ^8.0.1
   path_provider: ^2.0.2
-  provider: ^5.0.0
-  sqflite: ^2.0.0+3
+
+  # modules
+  core:
+    path: core
+  movies:
+    path: movies
+  tv_shows:
+    path: tv_shows
+  about:
+    path: about
 
 dev_dependencies:
-  build_runner: ^2.1.4
   flutter_test:
     sdk: flutter
+  build_runner: ^2.1.4
   mockito: ^5.0.16
-  test_coverage_badge: ^0.2.0
+  bloc_test: ^9.0.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -53,7 +60,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/
+    - assets/circle-g.png
+    - assets/cert/ssl_pinning_certificate.pem
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
