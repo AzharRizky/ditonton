@@ -2,6 +2,8 @@ import 'package:about/about.dart' show AboutPage;
 import 'package:core/core.dart' show DrawerItem, kDavysGrey, kGrey;
 import 'package:ditonton/presentation/pages/search_page.dart';
 import 'package:ditonton/presentation/pages/watchlist_page.dart';
+
+///import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 import 'package:movies/movies.dart' show HomeMoviePage;
 import 'package:tv_shows/tv_shows.dart';
@@ -47,6 +49,15 @@ class _HomePageState extends State<HomePage> {
       AppBar(
         title: Text('Ditonton'),
         actions: [
+          /*
+          IconButton(
+            onPressed: () {
+              FirebaseCrashlytics.instance.crash();
+              Navigator.pushNamed(context, SearchPage.routeName);
+            },
+            icon: Icon(Icons.search),
+          )
+          */
           IconButton(
             onPressed: () {
               Navigator.pushNamed(
